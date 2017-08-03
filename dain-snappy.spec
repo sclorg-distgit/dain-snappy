@@ -8,7 +8,7 @@
 
 Name:           %{?scl_prefix}dain-snappy
 Version:        0.4
-Release:        3.1%{?dist}
+Release:        3.2%{?dist}
 Summary:        Snappy compression library
 License:        ASL 2.0 and BSD
 URL:            https://github.com/dain/snappy
@@ -68,6 +68,9 @@ sed -i /@Test/d $(find -name SnappyTest.java)
 %license license.txt notice.md
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 0.4-3.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 0.4-3.1
 - Automated package import and SCL-ization
 
